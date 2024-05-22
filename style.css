@@ -1,61 +1,129 @@
+/* style.css */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-}
-
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
 }
 
 header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 2.5em;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #3f51b5;
 }
 
-input, select, button {
+input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1.1em;
 }
 
 button {
-    background-color: #007BFF;
-    color: #fff;
+    width: 100%;
+    padding: 15px;
+    background-color: #3f51b5;
+    color: white;
     border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #303f9f;
 }
 
 .transformed-texts {
-    margin-top: 20px;
-    white-space: pre-wrap; /* Permet de conserver les espaces et les retours à la ligne */
-    word-wrap: break-word; /* Permet de couper les mots longs pour éviter le dépassement de la boîte */
+    margin-top: 30px;
 }
+
+.transformed-texts p {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+
+
+.container {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+label {
+
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #3f51b5;
+}
+
+input {
+
+    width: calc(100% - 30px); 
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+    box-sizing: border-box; 
+    text-align: center; 
+}
+
+button {
+    width: calc(100% - 30px); 
+    padding: 15px;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
 
 
